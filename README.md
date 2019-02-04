@@ -1,4 +1,5 @@
-# PZP_Viktor
+# Prozedurale Programmierung
+
 # Tag 1
 ## Kommentare
 Werden vom Compiler ignoriert.
