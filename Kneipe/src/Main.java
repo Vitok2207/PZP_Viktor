@@ -23,6 +23,6 @@ public class Main {
                     Riesling, Stuttgarter Hofbräu, Paulaner, Sekt Brut,
                     Jägermeister, Absinth, Williams Birne, Marillenschnaps
          */
-                
+
     }
 }
