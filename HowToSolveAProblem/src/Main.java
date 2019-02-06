@@ -1,10 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
+        //Boolean - true oder false - wahr oder falsch
         boolean antwort;
 
         System.out.println("Funktioniert alles wie es soll?");
         antwort = false
+        System.out
         if (antwort) {
             System.out.println("Lass es so!");
             System.out.println("Es gibt kein Problem!");
