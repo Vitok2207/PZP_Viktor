@@ -12,6 +12,13 @@ public class Main {
         System.out.print("Geben Sie Breite ein: ");
         int breite = derScanner.nextInt();
 
+        // Schleifen - For Schleife
+        // Schleifenkopf: 1. Teil:      Zählvariable und Startwert
+        //                2. Teil:      Grenze (Möglich sind hier alle Operatoren)
+        //                              <, <=, >, =>, ==, !=
+        //                3. Teil:      Anweisung nach einem Durchlauf
+        //                              i++: Erhöhe um eines
+        //                              i--: Erniedrige um eins
 
         // Gefülltes Rechteck
         for (int i = 1; i <= Laenge; i++) {
