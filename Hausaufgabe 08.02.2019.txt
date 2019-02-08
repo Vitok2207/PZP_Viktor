@@ -13,9 +13,12 @@ Wir verwenden die For Schleife für eine bestimmte Anzahl von Wiederholungen.
 Eine Variable von einem bestimmten Wert bis zu einem anderen Wert gezählt werden soll.
 
 Welche Möglichkeiten zur Ausgabe auf der Konsole kennen Sie?
-
+System.out.print()
+System.out.println() (mit Zeilenbruch am Ende)
 
 Welche Möglichkeit zur Eingabe haben wir?
-
+System.in
 
 Wie verhält es sich mit der Eingabe von Zahlen und Worten?
+next()      Eingabe von Worte
+nextInt()   Eingabe von Zahlen
