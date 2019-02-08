@@ -1,0 +1,21 @@
+Nachmittagsaufgaben 08.02.2019
+
+Beantworten Sie folgende Fragen in Ihren eigenen Worten:
+
+Wie ist eine For Schleife aufgebaut?
+Die For Schleife ist in den folgenden drei Parameter aufgebaut
+1. Initialisierung
+2. Zielwert
+3. Schrittweite
+
+Wozu verwenden wir eine For Schleife?
+Wir verwenden die For Schleife für eine bestimmte Anzahl von Wiederholungen.
+Eine Variable von einem bestimmten Wert bis zu einem anderen Wert gezählt werden soll.
+
+Welche Möglichkeiten zur Ausgabe auf der Konsole kennen Sie?
+
+
+Welche Möglichkeit zur Eingabe haben wir?
+
+
+Wie verhält es sich mit der Eingabe von Zahlen und Worten?
