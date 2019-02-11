@@ -10,7 +10,7 @@ Eingeleitet durch Schrägstrich und Sternchen, beendet durch Sternchen und Schr�
 /*  Das ist ein mehrzeiliger Kommentar <br>
     Das gehört noch dazu <br>
     Ende des Kommentars */
-    
+
 ## Ausgaben auf der Konsole
 ### Mit Zeilenumbruch
 System.out.println("Hello World");
@@ -49,7 +49,7 @@ Ausgabe: Preis: 239€
 ## Verzweigungen
 ### if(Bedingung) {Anweisung}
 Die Anweisung wird ausgeführt, wenn die Bedingung erfüllt ist. <br>
-Es können beliebig viele if Blöcke vor einem Else Block stehen. 
+Es können beliebig viele if Blöcke vor einem Else Block stehen.
 
 ### else if(Bedingung) {Anweisung}
 Die Bedingung wird geprüft, wenn die vorangehende Bedingung nicht erfüllt war. <br>
@@ -65,7 +65,7 @@ Else kann nie alleine stehen.
 ### \> Größer
 if(alter > 17)<br>
 Alles, was größer 17 ist erfüllt die Bedingung.
- 
+
 ### \< Kleiner
 if(alter < 16) <br>
 Alles, was kleiner 16 ist erfüllt die Bedingung.
@@ -74,7 +74,7 @@ if(alter >= 18) <br>
 18 und alles, was größer 18 ist erfüllt die Bedingung.
 ### \<= Kleiner-gleich
 if(alter <= 10) <br>
-10 und alles was, kleiner 10 ist erfüll die Bedingung. 
+10 und alles was, kleiner 10 ist erfüll die Bedingung.
 ### == Gleich
 if(alter == 21) <br>
 NUR 21 erfüllt die Bedingung
@@ -115,3 +115,16 @@ for ( Zählvariable mit Anfangswert; Bedingung; Schrittweite) { <br>
       // Anweisung, die wiederholt werden soll <br>
 } <br>
 Diese können wir beliebig oft ineinander schachteln, wie wir es beim Zeichnen eines Rechteckes nutzen.
+
+#Tag 4
+Bearbeitung des Projekts Rechteck
+
+#Tag 5
+##Ausgelagerten Methoden
+Wir können Teile unseres Programms zur besseren Struktur auslagern und bei Bedarf wieder aufrufen.
+### Auslagern
+static void methodenName() { Anweisungen, die ausgeführt werden sollen. }
+### Aufruf in der main Methode
+public static void main(String[] args) { <br>
+    methodenName(); <br>
+}
