@@ -1,0 +1,51 @@
+switch-case ersetzt komplizierte Mehrfachverzweigungen
+Mit Hilfe einer switch-case-Verzweigung können, ähnlich wie in einer if-else-Verzweigung, ein primitiver int-Wert überprüft und entsprechende Anweisungen ausgeführt werden.
+
+Die Verzweigung kann bis zur Version Java 1.6 nur primitive int-Werte, keine long, float oder gar Objekte prüfen.
+Ab Java 1.7 kann auch auf Strings geprüft werden. Sie entspricht einer Mehrfachverzweigung mit if.
+Der Wert hinter dem switch wird nacheinander mit den hinter der Sprungmarke case aufgeführten Werten verglichen.
+Bei Übereinstimung wird die jeweilige Anweisung ausgeführt. Trifft keine Übereinstimmung zu, kann optional mit der Sprungmarke default eine Standardanweisung ausgeführt werden.
+
+public class SwitchCaseClass { 
+     
+    public static void main(String[] args){ 
+        int i=2; 
+         
+        switch(i){ 
+        case 0: 
+            System.out.println("i ist null"); 
+            break; 
+        case 1: 
+            System.out.println("i ist eins"); 
+            break; 
+        case 2: 
+            System.out.println("i ist zwei"); 
+            break; 
+        case 3: 
+            System.out.println("i ist drei"); 
+            break; 
+        default: 
+            System.out.println("i liegt nicht zwischen null und drei"); 
+        } 
+    } 
+} 
+
+Es ist wichtig darauf zu achten, dass nach Ausführung einer Anweisung der Schleifendurchlauf mit break unterbrochen wird, 
+da die folgenden Sprungmarken sonst ebenfalls geprüft und ggf. ausgeführt werden.
+
+Mit der Java-Version 1.7 wurde die Möglichkeit eingeführt, auch auf Strings zu prüfen. Ein Beispiel sieht wie folgt aus:
+
+String s = "Hundefutter";
+    switch (s) {
+        case "Marmelade":
+            System.out.println("Prima zum Frühstück");
+            break;
+        case "Pizza":
+            System.out.println("Immer wieder gerne");
+            break;
+        case "Hundefutter":
+            System.out.println("Pfui Teufel");
+            break;
+        default:
+            System.out.println("Keinen Hunger?");
+    }

@@ -1,0 +1,65 @@
+Was ist eine While Schleife?
+- Die While Schleife arbeitet solange, bis die Bedingung nicht mehr wahr ist.
+Merken:
+Endlosschleifen sind kacke! Darauf achten, etwas einzubauen, das eine Endlosschleife verhindert.
+
+------------------------------------------------------------------------------------------------------------------
+
+Quelle @ javabeginners
+
+Die while-Schleife führt wiederholt Anweisungen nach Prüfung einer Bedingung aus.
+Die while-Schleife dient dazu, eine oder mehrere Anweisungen solange auszuführen, wie eine Bedingung wahr (true) ist.
+
+Im Gegensatz zur for-Schleife muss bei der while-Schleife vorher eine Zählvariable deklariert und initialisiert werden.
+Im Kopf, in den runden Klammern, wird dann die Abbruchbedingung geprüft.
+Man spricht von einer kopfgesteuerten Schleife. 
+Das Inkrementieren oder Dekrementieren der Zählvariablen geschieht üblicherweise am Ende innerhalb des Schleifenkörpers.
+
+public class WhileClass { 
+     
+    public void gibAus(){ 
+        int i=0; 
+        while(i<10){ 
+            System.out.println(i); 
+            i++; 
+        } 
+    } 
+     
+    public static void main(String[] args){ 
+        WhileClass wc = new WhileClass(); 
+        wc.gibAus(); 
+    } 
+}
+
+Häufige Fehler
+Die while-Schleife reagiert empfindlich auf eine fehlerhafte Syntax:
+Fehlt die Abbruchbedingung, wird diese niemals false oder fehlt die Änderung der Zählvariablen entsteht möglicherweise eine Endlosschleife, die das Programm zum Absturz bringen oder 'einfrieren' kann.
+
+Der in der Abbruchbedingung abgefragte Wertebereich wird nie erreicht:
+int i=0;
+while(i>100) {
+    //...
+    ++i;
+}
+
+Das Inkrement fehlt:
+int i=0;
+while(i<100) {
+    //...
+}
+
+Die Abbruchbedingung ergibt immer true
+int i=0;
+while(true) {
+    //...
+    ++i;
+}
+
+Die Zählvariable wird (aus Versehen) immer wieder zurückgesetzt:
+int i=0;
+while(i>100) {
+    //...
+    ++i;
+    //...
+    i=0;
+}
