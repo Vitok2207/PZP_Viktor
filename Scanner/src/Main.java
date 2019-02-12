@@ -1,19 +1,17 @@
-// Scanner importieren, damit wir ihn später verwenden können.
 import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-        // Scanner
-        Scanner derScanner = new Scanner(System.in);
-
+        Scanner dieEingabe = new Scanner(System.in);
         System.out.println("Wie heißt du?");
-        String name = derScanner.nextLine();
-        System.out.println("Aha, du bist also " + name);
+        String name = dieEingabe.nextLine();
+        System.out.println("Hallo " + name);
         System.out.println("Woher kommst du?");
-        String herkunft = derScanner.nextLine();
-        System.out.println("Interessant, aus " + herkunft);
+        String herkunft = dieEingabe.nextLine();
+        System.out.println("Gruß nach " + herkunft);
         System.out.println("Wie alt bist du?");
-        int alter = derScanner.nextLine();
+        int alter = dieEingabe.nextInt();
+        System.out.println(alter + "Jahre! Alter schwede...");
     }
+
 }

@@ -15,16 +15,23 @@ public class Main {
         System.out.println("Bereich der Zufallszahl maximum:");
         int maximum = Eingabe.nextInt();
 
+        //Anzahl der möglichen Versuche anhand des definierten min und max festlegen
+        int rundenzaehler = 0;
+        int maxRunden = (maximum - minimum) / 10;
+        int minRunden = 10;
+        if(maxRunden < minRunden){
+            maxRunden = minRunden;
+        }
+        System.out.println("Maximale Versuche : " + maxRunden);
+
         //Zufallszahl erzeugen
         int zufallszahl = Zufallszahl(minimum, maximum);
         System.out.println("Die Zufallszahl zwischen "+ minimum + " und " + maximum + " wurde generiert.\nDu kannst anfangen zu raten");
-
         int benutzereingabe = Eingabe.nextInt();
-        int rundenzaehler = 0;
 
         //Solange eingabe ungleich Zufallszahl und Rundenzaähler nicht überschritten
         //Frage immer wieder nach einer neuen Zahl , gib einen Tip und Zähle den Rundenzähler eins hoch
-        while(benutzereingabe != zufallszahl && rundenzaehler < 10){
+        while(benutzereingabe != zufallszahl && rundenzaehler < maxRunden){
             if(benutzereingabe > zufallszahl){
                 System.out.println("Pech gehabt! Versuch es nochmal etwas niedriger");
             }else{
@@ -40,8 +47,6 @@ public class Main {
             System.out.println("Sorry du hast es in " + rundenzaehler + " Runden nicht geschafft die Zahl zu erraten!");
         }
     }
-
-
 
     private static int Zufallszahl(int min, int max) {
 

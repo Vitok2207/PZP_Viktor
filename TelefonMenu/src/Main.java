@@ -3,12 +3,15 @@ import java.util.Scanner;
 public class Main {
     static int Auswahl;
     static Scanner Eingabe = new Scanner(System.in);
+    static boolean nochmal = true;
 
     public static void main(String[] args) {
-        System.out.println("Willkommen im Telefonwahl-Menü");
 
-        InfoAnzeigen();
-        EingabeAuswerten();
+        while(nochmal) {
+            System.out.println("Willkommen im Telefonwahl-Menü");
+            InfoAnzeigen();
+            EingabeAuswerten();
+        }
 
     }
     static void InfoAnzeigen(){
@@ -22,7 +25,7 @@ public class Main {
         System.out.println("Beschwerde - 7");
         System.out.println("Rechtsabteilung - 8");
         System.out.println("sonstiges - 9");
-        System.out.println("Wiederholung der Ansage - 0");
+        System.out.println("Gespräch beenden - 0");
         System.out.println("Bitte geben Sie die gewünschte Option in Form der angezeigten Zahl ein");
     }
 
@@ -60,8 +63,8 @@ public class Main {
                 System.out.println("Sie haben eine Frage die in keine der vorher genannten Kategorien passt? Auf wiederhören!");
                 break;
             case 0:
-                System.out.println("Da Sie es beim ersten mal nicht verstanden haben, versuchen wir es erneut!");
-                InfoAnzeigen();
+                System.out.println("Auf wiedersehen!");
+                nochmal = false;
                 break;
             default:
                 System.out.println("Sie haben ein ungültiges Zeichen eingegeben, hier nochmal alle Optionen");
@@ -71,7 +74,6 @@ public class Main {
     }
 
     static void Neukunde(){
-        System.out.println("Sie haben Fragen zu Ihrer Rechnung? Wir helfen gerne...");
         System.out.println("Willkommen Neukunde. Was könne  wir Ihnen andrehen?");
         System.out.println("Telefonie - 1");
         System.out.println("Mobilfunk - 2");
