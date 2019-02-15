@@ -1,5 +1,4 @@
 # Tag 1
-
 ## Kommentare
 Werden vom Compiler ignoriert.
 ### Einzeilig
@@ -22,6 +21,7 @@ System.out.print("Hello World ohne Zeilenumbruch");
 Fehlermeldungen werden auf der Konsole rot dargestellt. <br>
 System.err.print("Fehlermeldung ohne Zeilenumbruch"); <br>
 System.err.println("Fehlermeldung mit Zeilenumbruch"); <br>
+
 
 #Tag 2
 ## Sonderzeichen auf der Konsole
@@ -59,6 +59,7 @@ Es können beliebig viele else if Blöcke zwischen einem if und einem else Block
 ### else {Anweisung}
 Die Anweisung wird ausgeführt, wenn die Bedingung nicht erfüllt ist. <br>
 Else kann nie alleine stehen.
+
 
 # Tag 3
 ## Operatoren
@@ -116,8 +117,10 @@ for ( Zählvariable mit Anfangswert; Bedingung; Schrittweite) { <br>
 } <br>
 Diese können wir beliebig oft ineinander schachteln, wie wir es beim Zeichnen eines Rechteckes nutzen.
 
+
 #Tag 4
 Bearbeitung des Projekts Rechteck
+
 
 #Tag 5
 ##Ausgelagerten Methoden
@@ -129,8 +132,11 @@ public static void main(String[] args) { <br>
     methodenName(); <br>
 }
 
+
 #Tag 6
 TBD - To be done
+
+
 #Tag 7
 ##while-Schleife
 Führt den Anweisungsblock solange aus, wie die Bedingung im Schleifenkopf erfüllt ist. <br>
@@ -155,6 +161,7 @@ default: <br>
 break; <br>
 }
 
+
 # Tag 8
 ## Verzögerungen mit thread.sleep
 Mit thread.sleep(1000) können wir unser Programm um 1 sec in der Ausführung unterbrechen. <br>
@@ -174,6 +181,7 @@ Mit % (Modulo) können wir den Rest einer Division berechnen.<br>
 10 / 7 = 1 Rest 3<br>
 Der Rest ist hierbei relevant, dieser wird angegeben.<br>
 Der Modulo Operator (%) kann wie jeder anderer arithmetische Operator (+,-,*,/) verwendet werden.
+
 
 # Tag 9
 ## Verknüpfte Bedingungen
@@ -197,6 +205,8 @@ Beispiel: zahl = 5<br>
 if(zahl > 8 || zahl < 10) { ... } <br>
 Der Anweisungsblock würde ausgeührt werden, da eine der Bedingungen erfüllt ist. <br>
 5 ist NICHT größer 8, aber kleiner 10. <br>
+
+
 # Tag 10
 ## Methoden mit Parameter
 Java für Dummies - Seite 214ff
