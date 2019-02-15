@@ -1,24 +1,40 @@
-Nachmittagsaufgaben 08.02.2019
-
-Beantworten Sie folgende Fragen in Ihren eigenen Worten:
-
+1.
 Wie ist eine For Schleife aufgebaut?
-Die For Schleife ist in den folgenden drei Parameter aufgebaut
-1. Initialisierung
-2. Zielwert
-3. Schrittweite
+	Schleifenkopf:
+	1. Zählvariable initialisieren ; 2. Bedingung festlegen; Festlegen was passiert wenn Schleife einmal durchlaufen wurde;
+	Schlefienkörper:
+	Anweisungen was bei einem Schleifendurchlauf passieren soll
 
+1.1
 Wozu verwenden wir eine For Schleife?
-Wir verwenden die For Schleife für eine bestimmte Anzahl von Wiederholungen.
-Eine Variable von einem bestimmten Wert bis zu einem anderen Wert gezählt werden soll.
+Meist für sich wiederholende Aufgaben bei denen eine Zählvariable von nöten ist.
 
+2.
 Welche Möglichkeiten zur Ausgabe auf der Konsole kennen Sie?
-System.out.print()
-System.out.println() (mit Zeilenbruch am Ende)
+	System.otu.print - Ausgabe einer zeichenfolge
+	System.otu.println - Ausgabe einer zeichenfolge inkl. Zeilenumbruch
 
+2.1
 Welche Möglichkeit zur Eingabe haben wir?
-System.in
+	Die Java Klasse Scanner ermöglicht eingaben auf dem Kommandozeile (java.util.Scanner)
 
+2.2
 Wie verhält es sich mit der Eingabe von Zahlen und Worten?
-next()      Eingabe von Worte
-nextInt()   Eingabe von Zahlen
+	Bei Zahlen und Worten werden unterschiedliche Funktionen der Klasse Scanner genutzt:
+	Zahlen: Scanner.nextInt() oder auch Scanner.nextDouble() usw
+	Worte bzw. Strings: Scanner.next(), Scanner.nextLine()
+	Passend dazu muss auch die zu befüllende Variable mit dem richtigen Datentyp versehen werden.
+
+3.
+Was ist der Unterschied zwischen While und Do While?
+	Bei einer While Schleife wird vor dem duchlauf des Schleifenkörpers geprüft ob die Bedingung zur Ausführung der Schleife zutrifft.
+	Bei einer DoWhile Schleife wird erst der Schleifenkörper abgearbeitet und daraufhin geprüft ob die gestellte Bedingung zutrifft.
+
+4.
+Was ist der Unterschied zwischen While und For?
+	While definiert nur eine Bedingung für die Schleife im Kopf während for auch gleich eine Zählvariable initialisiert sowie eine Aktion nach einem Schleifendurchlauf
+
+5.
+Wann verwende ich eher While und wann eher For?
+	For eher bei aufgaben bei denen gezählt werden muss.
+	While bei allem anderen.
