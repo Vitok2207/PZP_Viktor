@@ -214,3 +214,30 @@ Java für Dummies - Seite 214ff
 Java für Dummies - Seite 216ff
 ## Methoden mit Parameter und Rückgabetyp
 Methoden können gleichzeitig Parameter annehmen und einen Rückgabewert besitzen. Das eine schließt das andere nicht aus!
+
+# Tag 11
+## Zustandsautomaten
+Ein Zustandsautomat ist eine Verbindung von while und switch mitderen Hilfe wir Zustände modellieren können. <br>
+Zwischen Zuständen kann beliebig oft gesprungen werden, sie können beliebig oft wiederholt werden. <br>
+Eine außerhalb der while Schleife definierte Zustandsvariable entscheidet über den aktuellen Zustand, also den Fall, der ausgeführt werden soll. <br>
+Um zwischen den Zuständen zu wechseln, müssen wir nur die Variable zustand verändern. <br>
+Sobald der aktuelle Fall (case) beendet wird, wird im nächsten Durchlauf der dem Zustand entsprechende Fall ausführt.
+Beispiel: <br>
+int zustand = 0;<br>
+while(zustand < 3) {<br>
+switch(zustand) {<br>
+case 0: // Starte Programm<br>
+// Ausgabe: Willkommen bei TicTacToe V1.1 <br>
+zustand = 1;  // Zustand wird auf 1 gesetzt => Im nächsten Durchlauf wird der nächste Zustand ausgeführt! <br>
+break;<br>
+case 1: // Führe Programm aus<br>
+// Tic Tac Toe Spiel<br>
+zustand = 2; // Zustand wird auf 2 gesetzt<br>
+break;<br>
+case 2: // Beende Programm<br>
+// Nachfragen, ob beendet werde soll<br>
+// Wenn ja, zustand = 3 (3 liegt außerhalb unserer Grenze der While Schleife, daher wird der Automat beendet)
+// Wenn nein, dann zustand = 1 (Programm wird nochmal gestartet)<br>
+break;<br>
+}<br>
+}<br>
