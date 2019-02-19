@@ -215,6 +215,7 @@ Java für Dummies - Seite 216ff
 ## Methoden mit Parameter und Rückgabetyp
 Methoden können gleichzeitig Parameter annehmen und einen Rückgabewert besitzen. Das eine schließt das andere nicht aus!
 
+
 # Tag 11
 ## Zustandsautomaten
 Ein Zustandsautomat ist eine Verbindung von while und switch mitderen Hilfe wir Zustände modellieren können. <br>
@@ -241,3 +242,21 @@ case 2: // Beende Programm<br>
 break;<br>
 }<br>
 }<br>
+
+
+## Zustandsautomat mit konstanten Bezeichnern
+Um unserem Zustandsautomat mehr Aussagekraft zu verleihen, können wir zu Beginn unseres Programms konstante Bezeichner definieren und später über diese auf die entsprechenden Zustände zugreifen. <br>
+Die Definition derer erfolgt vor der Main Methode, also innerhalb der Klasse, aber außerhalb irgendwelcher Methoden.
+Wir nutzen dazu static final int, da wir eine Variale erstellen, die über alle Methoden verfügbar (static) und außerdem nicht veränderbar (final) und ganzzahlig (int) sein soll. <br>
+Beispiel:<br>
+// Definition innerhalb von public class, aber außerhalb von Methoden<br>
+static final int SP1WIN = 4; <br>
+static final int SP2WIN = 5; <br>
+// Innerhalb switch(zustand)
+// statt case 4: <br>
+case SP1WIN:<br>
+...<br>
+break;<br>
+// Innerhalb von Methoden (also überall sonst in unserem Programm)<br>
+// statt zustand = 5;<br>
+zustand = SP2WIN;
